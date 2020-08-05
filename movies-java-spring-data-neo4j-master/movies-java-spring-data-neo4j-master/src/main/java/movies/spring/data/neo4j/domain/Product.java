@@ -14,17 +14,17 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * @author Mark Angrish
  */
 @NodeEntity
-public class Product {
-
+public class Product 
+{
 	@Id
 	@GeneratedValue
 	private Long id;
 	private double price;
 	private String companyName;
-
+/*
 	@JsonIgnoreProperties("stationary")
 	@Relationship(type = "Search_FOR", direction = Relationship.INCOMING)
-	private List<Role> roles;
+	private List<Role> roles;*/
 
 	public Product() {
 	}
@@ -45,16 +45,5 @@ public class Product {
 
 	public double getPrice() {
 		return price;
-	}
-
-	public List<Role> getRoles() {
-		return roles;
-	}
-	
-	public void addRole(Role role) {
-		if (this.roles == null) {
-			this.roles = new ArrayList<>();
-		}
-		this.roles.add(role);
 	}
 }

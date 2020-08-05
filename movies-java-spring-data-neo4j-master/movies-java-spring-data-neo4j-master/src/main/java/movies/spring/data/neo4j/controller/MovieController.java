@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/")
-public class MovieController {
-
+public class MovieController 
+{
 	private final MovieService movieService;
 	
 	public MovieController(MovieService movieService) {

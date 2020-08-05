@@ -20,17 +20,20 @@ public class MovieService {
 		this.movieRepository = movieRepository;
 	}
 
-	private Map<String, Object> toD3Format(Collection<Movie> movies) {
+	private Map<String, Object> toD3Format(Collection<Movie> movies) 
+	{
 		List<Map<String, Object>> nodes = new ArrayList<>();
 		List<Map<String, Object>> rels = new ArrayList<>();
 		int i = 0;
 		Iterator<Movie> result = movies.iterator();
-		while (result.hasNext()) {
+		while (result.hasNext()) 
+		{
 			Movie movie = result.next();
 			nodes.add(map("title", movie.getTitle(), "label", "movie"));
 			int target = i;
 			i++;
-			for (Role role : movie.getRoles()) {
+			for (Role role : movie.getRoles())
+			{
 				Map<String, Object> actor = map("title", role.getPerson().getName(), "label", "actor");
 				int source = nodes.indexOf(actor);
 				if (source == -1) {
