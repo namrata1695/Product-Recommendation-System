@@ -11,7 +11,7 @@ import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;
 
 /**
- * @author Mark Angrish
+ * @author Namrata Ajmeri
  */
 @NodeEntity
 public class Person {

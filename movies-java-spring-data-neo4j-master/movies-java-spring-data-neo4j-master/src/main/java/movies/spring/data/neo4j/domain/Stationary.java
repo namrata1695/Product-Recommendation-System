@@ -10,6 +10,9 @@ import org.neo4j.ogm.annotation.Relationship;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**
+ * @author Namrata Ajmeri
+ */
 @NodeEntity
 public class Stationary 
 {

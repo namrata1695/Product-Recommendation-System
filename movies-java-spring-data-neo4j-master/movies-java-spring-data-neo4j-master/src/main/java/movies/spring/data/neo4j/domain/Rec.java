@@ -9,6 +9,9 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
+/**
+ * @author Namrata Ajmeri
+ */
 @RelationshipEntity(type = "SEARCHED_FOR")
 public class Rec {
 	@Id

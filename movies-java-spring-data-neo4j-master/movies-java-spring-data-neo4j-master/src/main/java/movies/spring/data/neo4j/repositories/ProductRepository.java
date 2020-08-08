@@ -11,9 +11,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
- * @author Michael Hunger
- * @author Mark Angrish
- * @author Michael J. Simons
+ * @author Namrata Ajmeri
  */
 @RepositoryRestResource(collectionResourceRel = "products", path = "products")
 public interface ProductRepository extends Neo4jRepository<Stationary, Long> {

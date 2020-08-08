@@ -9,9 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 /**
- * @author Michael Hunger
- * @author Mark Angrish
- * @author Michael J. Simons
+ * @author Namrata Ajmeri
  */
 @RepositoryRestResource(collectionResourceRel = "movies", path = "movies")
 public interface MovieRepository extends Neo4jRepository<Movie, Long> {

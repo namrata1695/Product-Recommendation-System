@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.neo4j.ogm.annotation.*;
 
 /**
- * @author Mark Angrish
+ * @author Namrata Ajmeri
  */
 @RelationshipEntity(type = "ACTED_IN")
 public class Role {
