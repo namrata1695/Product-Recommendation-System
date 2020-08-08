@@ -1,4 +1,4 @@
-Movies Example Application
+Product Recommendation System
 ==========================
 
 How to use Spring Boot, Spring Data, and Neo4j together.
