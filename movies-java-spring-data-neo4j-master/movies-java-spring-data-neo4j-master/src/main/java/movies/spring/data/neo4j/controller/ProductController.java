@@ -27,5 +27,17 @@ public class ProductController {
 	public ProductController(ProductService productService)
 	{
 		this.productService = productService;
-	}	
+	}
+	
+	@GetMapping("/stationary")
+	public Map<String, Object> allStationaries(@RequestParam(value = "limit",required = false) Integer limit) {
+		return productService.allStationaries(limit == null ? 100 : limit);
+	}
+	
+	@GetMapping("/stationary/{productName}")
+	public Map<String, Object> getPeopleAlsoSearchedFor(@PathVariable String productName)
+	{
+		int limit = 25;
+		return productService.getPeopleAlsoSearchedFor(productName, limit);
+	}
 }
