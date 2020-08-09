@@ -61,7 +61,7 @@ public class ProductService {
 		while (result.hasNext()) 
 		{
 			Stationary stationary = result.next();
-			nodes.add(map("title", stationary.getCompanyName(), "label", "movie"));
+			nodes.add(map("title", stationary.getCompanyName(), "label", "stationary"));
 			int target = i;
 			i++;
 			/*for (Role role : movie.getRoles())
